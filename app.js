@@ -6,7 +6,7 @@ mongoose.set("strictQuery",false);
 app.set("view engine","ejs");
 app.use(parser.urlencoded({extended : true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://siddharthgoyal630:sdgoyal047@cluster0.zy2jmd7.mongodb.net/todoDB");
+mongoose.connect("mongodb://localhost: 27017/todoDB");
 const itemSchema = new mongoose.Schema({
     name : String
 });
